@@ -1,0 +1,191 @@
+/* Navbar styles */
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(148, 88, 45);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px ; /* Increase padding to make the navbar thicker */
+    font-weight: bold; /* Make font bold */
+    
+}
+
+.navbar .right-menu span::after {
+    margin-left: 10px;
+}
+
+.navbar .right-menu span:nth-child(1)::after {
+    content: "\f007"; /* User icon */
+    font-family: "Font Awesome 5 Free";
+}
+
+.navbar .right-menu span:nth-child(2)::after {
+    content: "\f013"; /* Cog icon */
+    font-family: "Font Awesome 5 Free";
+}
+
+.navbar .right-menu span:nth-child(3)::after {
+    content: "\f2f5"; /* Sign-out-alt icon */
+    font-family: "Font Awesome 5 Free";
+}
+
+.navbar span {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 67.5px;
+    left: 0;
+    width: 200px;
+    background-color: bisque;
+    padding: 20px;
+    height: 100%;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ccc;
+}
+
+/* Profile page specific styles can be added below */
+/* Profile page specific styles */
+
+/* Profile section styles */
+.profile-section {
+    margin-left: 240px; /* Adjust based on sidebar width */
+    margin-top: 70px; /* Adjust based on navbar height */
+    padding: 20px;
+};
+
+
+.profile-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Profile box styles */
+.profile-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.profile-box p {
+    margin: 5px 0;
+}
+/* Button styles */
+#edit-profile-btn {
+    background-color: blanchedalmond; /* Blue background color */
+    color: brown ; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    font-size: 16px; /* Font size */
+    display: block; /* Make button a block element */
+    margin: 0 auto; /* Center horizontally */
+}
+
+#edit-profile-btn:hover {
+    background-color: burlywood /* Darker blue color on hover */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hide modal by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 10% auto; /* Center modal vertically and horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    width: 60%; /* Set width of modal */
+    max-width: 600px; /* Maximum width for larger screens */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form styling */
+#profile-form {
+    display: grid;
+    grid-template-columns: 1fr ; /* Two columns */
+    gap: 5px; /* Gap between form elements */
+}
+
+#profile-form label {
+    font-weight: bold;
+}
+
+#profile-form input[type="text"],
+#profile-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#profile-form input[type="text"]:focus,
+#profile-form input[type="email"]:focus {
+    border-color: #555;
+    outline: none;
+}

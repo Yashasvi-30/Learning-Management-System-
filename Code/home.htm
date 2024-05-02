@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-menu">
+            <span><a href="#"></a>Menu</span>
+            <span id ="classes" ><a href= "#"></a>Classes</span>
+            <span><a href="#"></a>Grades</span>
+            <span><a href="#"></a>Assignments</span>
+        </div>
+        <div class="right-menu">
+            <span id ="profile"><a href="#"></a>Profile</span>
+            <span><a href="#"></a>Settings</span>
+            <span id="logout"><a href="#"></a>Logout</span>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Todays Sessions</a></li>
+            <li><a href="#">Circulars</a></li>
+            <li><a href="#">Attendance Summary</a></li>
+            <li><a href="#">Live Learning</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Course Selection</a></li>
+            <li><a href="#">Transcript</a></li>
+            <li><a href="#">Fee Update</a></li>
+        </ul>
+
+    </div>
+
+    <div class="main-content">
+        <div class="greeting">
+            <h1 style="font-size: 50 px;" > Hi, <span id="username">User</span>!</h2>
+            <p style = "font-size: 28 px;">What would you like to do today?</p>
+            <div class="slideshow-container">
+            <div class="slides">
+                <img src="image1.jpeg" alt="Image 1 " height="300px" width="500px">
+                <img src="image2.webp" alt="Image 2"height="300px" width="500px">
+                <img src="image3.jpeg" alt="Image 3"height="300px" width="500px">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="card" onclick="openModal('business')">
+                <div class="card-content">
+                    <h3>School of Business</h3>
+                    <img src="business.jpeg" alt="Business Logo" width="100" height="100">
+                </div>
+            </div>
+        
+            <div class="card" onclick="openModal('computerScience')">
+                <div class="card-content">
+                    <h3>School of Computer Science</h3>
+                    <img src="computerciencelogo.png" alt="Computer Science Logo" width="100" height="90">
+                </div>
+            </div>
+        
+            <div class="card" onclick="openModal('law')">
+                <div class="card-content">
+                    <h3>School of Law</h3>
+                    <img src="law_aclogo.png" alt="Law Logo" width="100" height="100">
+                </div>
+            </div>
+        
+            <div class="card" onclick="openModal('design')">
+                <div class="card-content">
+                    <h3>School of Design</h3>
+                    <img  id = "design_logo" src="designaclogo-removebg-preview.png" alt="Design Logo" width="100" height="100" >
+                </div>
+            </div>
+        </div>
+        
+        <div id="businessModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('business')">&times;</span>
+                <h2>Business School Blog</h2>
+                <p>Title: Empowering Entrepreneurs: Insights from the World of Business
+
+                    Welcome to the School of Business blog! Here, we celebrate the spirit of entrepreneurship, innovation, and leadership that drives the world of business.
+                    
+                    In an increasingly competitive and interconnected global economy, business plays a central role in driving growth, creating value, and shaping the future of society. From startups to multinational corporations, our blog covers a wide range of topics relevant to entrepreneurs, executives, and business enthusiasts alike.
+                    
+                    Join us as we explore the latest trends in business management, share success stories from the front lines of entrepreneurship, and offer practical advice and strategies for navigating the challenges of the business world. Whether you're a seasoned business professional or a budding entrepreneur, our blog provides valuable insights, inspiration, and resources to help you succeed in the dynamic world of business.</p>
+            </div>
+        </div>
+        
+        <div id="computerScienceModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('computer_science')">&times;</span>
+                <h2>Computer Science School Blog</h2>
+                <p>Title: Navigating the Digital Frontier: Insights from the World of Computer Science
+
+                    Welcome to the School of Computer Science blog! Here, we embark on a journey into the heart of technology, where bytes and algorithms shape the digital landscape.
+                    
+                    In an era defined by rapid technological advancement, computer science lies at the forefront of innovation, driving progress across industries and transforming the way we live, work, and communicate. From artificial intelligence to cybersecurity, big data to cloud computing, our blog covers a wide range of topics at the cutting edge of computer science.
+                    
+                    Join us as we explore the latest research breakthroughs, share practical insights and tips for aspiring computer scientists, and delve into the ethical and societal implications of technology. Whether you're a seasoned coder, budding programmer, or simply curious about the world of computing, our blog offers a window into the exciting and ever-changing field of computer science.</p>
+            </div>
+        </div>
+        
+        <div id="lawModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('law')">&times;</span>
+                <h2>Law School Blog</h2>
+                <p>Title: Exploring the Intricacies of Legal Practice
+
+                    Welcome to the School of Law blog! In this blog post, we delve into the fascinating world of legal practice and explore the intricate details that shape the field of law.
+                    
+                    From landmark court cases to emerging trends in legislation, our dedicated team of legal experts provides insightful commentary and analysis on a wide range of topics. Whether you're a seasoned lawyer, aspiring law student, or simply curious about the law, our blog aims to inform, educate, and inspire.
+                    
+                    Join us as we navigate the complex landscape of justice, examine the principles of fairness and equity, and shed light on the role of law in society. Stay tuned for thought-provoking discussions, engaging debates, and compelling insights into the world of law.</p>
+            </div>
+        </div>
+        
+        <div id="designModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('design')">&times;</span>
+                <h2>Design School Blog</h2>
+               <P>Title: Unleashing Creativity: The Art and Science of Design
+
+                Welcome to the School of Design blog! Here, we celebrate the intersection of art and technology, creativity and innovation, form and function.
+                
+                In our dynamic and ever-evolving field, design plays a central role in shaping the way we experience the world around us. From graphic design to product design, user experience to interactive media, our blog explores the diverse facets of design and its impact on society.
+                
+                Join us as we showcase the work of visionary designers, highlight the latest trends and developments in the industry, and share practical tips and insights for aspiring designers. Whether you're a seasoned professional or a passionate enthusiast, our blog offers a platform for inspiration, collaboration, and creative exploration.</P>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Yashasvi 2024</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

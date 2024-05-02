@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <!-- Navbar content -->
+        <div class="left-menu">
+            <span><a href="#"></a>Menu</span>
+            <span id ="classes"><a href="#"></a>Classes</span>
+            <span><a href="#"></a>Grades</span>
+            <span><a href="#"></a>Assignments</span>
+        </div>
+        <div class="right-menu">
+            <span id ="profile"><a href="#"></a>Profile</span>
+            <span><a href="#"></a>Settings</span>
+            <span id="logout"><a href="#"></a>Logout</span>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Todays Sessions</a></li>
+            <li><a href="#">Circulars</a></li>
+            <li><a href="#">Attendance Summary</a></li>
+            <li><a href="#">Live Learning</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Course Selection</a></li>
+            <li><a href="#">Transcript</a></li>
+            <li><a href="#">Fee Update</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <!-- Student Information -->
+        <div class="profile-section">
+            <h2>Student Information</h2>
+            <div class="profile-box">
+                <!-- Student Information content -->
+                <p>Title: </p>
+                <p>First Name: </p>
+                <p>Middle Name: </p>
+                <p>Last Name: </p>
+                <p>Certificate Name: </p>
+                <!-- Add more profile fields -->
+            </div>
+        </div>
+
+        <!-- Academic Information -->
+        <div class="profile-section">
+            <h2>Academic Information</h2>
+            <div class="profile-box">
+                <!-- Academic Information content -->
+                <p>Degree: </p>
+                <p>Institute Name: </p>
+                <p>Result Status: </p>
+                <!-- Add more academic fields -->
+            </div>
+        </div>
+
+        <!-- Parent/Guardian Information -->
+        <div class="profile-section">
+            <h2>Parent/Guardian Information</h2>
+            <div class="profile-box">
+                <!-- Parent/Guardian Information content -->
+                <p>Mother's Full Name: </p>
+                <p>Mother's Guardian Type: </p>
+                <p>Mother's Email ID: </p>
+                <p>Mother's Profession: </p>
+                <p>Father's Full Name: </p>
+                <p>Father's Guardian Type: </p>
+                <p>Father's Email ID: </p>
+                <p>Father's Profession: </p>
+                <!-- Add more parent/guardian fields -->
+            </div>
+        </div>
+
+        <!-- Current Address -->
+        <div class="profile-section">
+            <h2>Current Address</h2>
+            <div class="profile-box">
+                <!-- Current Address content -->
+                <p>Address Line1: </p>
+                <p>Address Line2: </p>
+                <p>Address Line3: </p>
+                <p>Street: </p>
+                <p>Area: </p>
+                <p>Land Mark: </p>
+                <p>City: </p>
+                <p>Pincode: </p>
+                <p>State: </p>
+                <p>Country: </p>
+            </div>
+        </div>
+
+        <!-- Permanent Address -->
+        <div class="profile-section">
+            <h2>Permanent Address</h2>
+            <div class="profile-box">
+                <!-- Permanent Address content -->
+                <p>Address Line1: </p>
+                <p>Address Line2: </p>
+                <p>Address Line3: </p>
+                <p>Street: </p>
+                <p>Area: </p>
+                <p>Land Mark: </p>
+                <p>City: </p>
+                <p>Pincode: </p>
+                <p>State: </p>
+                <p>Country: </p>
+            </div>
+        </div>
+    </div>
+    <button id="edit-profile-btn">Edit Profile</button>
+    <div id="profile-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="profile-form">
+                <!-- Student Information -->
+                <h2>Student Information</h2>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br>
+           
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name"><br>
+               
+                <label for="middle-name">Middle Name:</label>
+                <input type="text" id="middle-name" name="middle-name"><br>
+               
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name"><br>
+               
+                <label for="certificate-name">Certificate Name:</label>
+                <input type="text" id="certificate-name" name="certificate-name"><br>
+               
+                
+                <input type="submit" value="Submit">
+            </form>
+            
+        </div>
+    </div>
+</div>
+    <footer>
+        <p>&copy; Yashasvi 2024</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

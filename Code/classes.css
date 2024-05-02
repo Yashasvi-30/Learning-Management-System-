@@ -1,0 +1,156 @@
+/* Navbar styles */
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(148, 88, 45);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px ; /* Increase padding to make the navbar thicker */
+    font-weight: bold; /* Make font bold */
+    z-index: 1000;
+    
+}
+
+.navbar .right-menu span::after {
+    margin-left: 10px;
+}
+
+.navbar .right-menu span:nth-child(1)::after {
+    content: "\f007"; /* User icon */
+    font-family: "Font Awesome 5 Free";
+}
+
+.navbar .right-menu span:nth-child(2)::after {
+    content: "\f013"; /* Cog icon */
+    font-family: "Font Awesome 5 Free";
+}
+
+.navbar .right-menu span:nth-child(3)::after {
+    content: "\f2f5"; /* Sign-out-alt icon */
+    font-family: "Font Awesome 5 Free";
+}
+
+.navbar span {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 67.5px;
+    left: 0;
+    width: 200px;
+    background-color: bisque;
+    padding: 20px;
+    height: 100%;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ccc;
+}
+/* Container styles */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Automatically adjust columns based on available space */
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card styles */
+/* Card styles */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    transform: perspective(1000px) rotateX(2deg) rotateY(2deg); /* 3D effect */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Light blue card */
+.card.blue {
+    background: linear-gradient(to bottom right, #a8d8eac7, #7fc4d7c2);
+}
+
+/* Light green card */
+.card.green {
+    background: linear-gradient(to bottom right, #b1dfbbc3, #8ecaa7b4);
+}
+
+/* Light yellow card */
+.card.yellow {
+    background: linear-gradient(to bottom right, #ffe082af, #ffd64fa5);
+}
+
+/* Light pink card */
+.card.pink {
+    background: linear-gradient(to bottom right, #f48fb1a0, #f0629188);
+}
+
+.card:hover {
+    transform: perspective(1000px) rotateX(0) rotateY(0); /* Rotate to original position on hover */
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card .btn {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #555;
+}
+.main-content  {
+    margin-left: 240px; /* Adjust based on sidebar width */
+    margin-top: 70px; /* Adjust based on navbar height */
+    padding: 20px;
+};

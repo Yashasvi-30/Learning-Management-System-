@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(45deg, #ffb1efb2, #c2c2ed, #b2efe3, #c98ca4);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            position: absolute;
+            top: 5vh; /* Adjust top margin */
+            
+            left: 50%;
+            transform: translateX(-50%);
+            width: 400px;
+             /* Enable vertical scroll if needed */
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 30vh;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 0 auto 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            background-color: #c2dfc3ee;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .social-buttons img {
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+            border-radius: 100%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .social-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<div class="background-animation"></div>
+
+<div class="container">
+    <h2>Signup</h2>
+    <div class="social-buttons">
+        <img src="google-icon.png" alt="Google">
+        <img src="apple-icon.png" alt="Apple">
+        <img src="microsoft-icon.jpeg" alt="Microsoft">
+    </div>
+    <form name="signupForm" ng-submit="submitForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ng-model="formData.name" required>
+
+        <label for="sap">SAP:</label>
+        <input type="text" id="sap" name="sap" ng-model="formData.sap" >
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" ng-model="formData.email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" ng-model="formData.password" >
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" ng-model="formData.confirmPassword" >
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" ng-model="formData.phone" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" ng-model="formData.address" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    // Function to show thank you message popup
+    function showThankYouMessage() {
+        // Show thank you message popup
+        var confirmation = confirm("Thank you for enrolling yourself on the Learning Management System portal. Check your email to confirm. Click continue to proceed.");
+        if (confirmation) {
+            // Continue to next step
+            alert("Continue button clicked. Redirecting...");
+            // Redirect to next page
+            // window.location.href = "next-page.html";
+        } else {
+            // Do something else or stay on the page
+            alert("Continue button not clicked. Stay on the page.");
+        }
+    }
+</script>
+<script src="signupController.js"></script>
+</body>
+</html>
