@@ -1,11 +1,14 @@
 {
-  "name": "docs",
+  "name": "learning-management-system",
   "version": "1.0.0",
-  "description": "Learning Management System Portal",
+  "description": "A Learning Management System Portal",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "author": "Yashasvi Gupta",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1" 
+  }
 }
