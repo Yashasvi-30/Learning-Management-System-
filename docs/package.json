@@ -6,6 +6,6 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Your Name",
+  "author": "Yashasvi Gupta",
   "license": "ISC"
 }

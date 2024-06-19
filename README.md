@@ -57,7 +57,7 @@ To run the LMS Portal locally, follow these steps:
 
 4. Run the server:
     ```bash 
-    node server.js
+    npm start
     ```
 
 5. Open your browser and navigate to:
