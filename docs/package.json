@@ -9,6 +9,9 @@
   "author": "Yashasvi Gupta",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1" 
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.10.1"
   }
 }

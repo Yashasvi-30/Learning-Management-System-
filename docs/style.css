@@ -34,8 +34,10 @@ form input {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    width: 50%;
+    width: calc(50% - 20px); /* Adjusted width */
+    margin-right: 10px; /* Added margin for spacing */
 }
+
 
 form button {
     padding: 10px 20px;
