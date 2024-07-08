@@ -9,6 +9,8 @@
 
 ## Description
 The Learning Management System (LMS) Portal is a comprehensive web-based platform designed to streamline online learning, course management, and administrative tasks for educational institutions. It serves as a centralized hub where students, teachers, and administrators can seamlessly access course materials, engage in virtual classrooms, manage assignments, track progress, and much more.
+I built it as my second year project.
+
 
 ## Features
 - **User Authentication**
